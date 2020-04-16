@@ -115,12 +115,12 @@ console.log(temperatureInF(40,'C'));
 function makePersonObject(id, name, email) {
   return{id, name, email};
 }
-console.log(7, 'Virginia', 'virginialdport@gmail.com')
+console.log(makePersonObject(7, 'Virginia', 'virginialdport@gmail.com'));
 /**
  * ### Challenge `getName`
  * 
  * @instructions
- * This function takes as its only argument
+ * This function takes  person as its only arugment
  * an object containing a `name` property,
  * and return a string that reads `Hello, my name is {name}`,
  * where `{name}` is the name stored in the object.
@@ -129,10 +129,11 @@ console.log(7, 'Virginia', 'virginialdport@gmail.com')
  * passing { id: 1, name: 'Leia', email: 'leia@leia.com` } as the argument,
  * the returned value should look like `Hello, my name is Leia`.
 */
-function getName(/* code here */) {
-  /* code here */
+function getName(person) {
+  return `Hello, my name is ${person.name}`;
+  
 }
-
+console.log(getName({id: 2, name: 'Virginia', email: 'virginialdport@gmail.com'}));
 
 /**
  * ### Challenge `appleIndex`
@@ -149,10 +150,15 @@ function getName(/* code here */) {
  * passing in [ 'orange', 'grape', 'apple', 'banana', 'mango' ] as the argument,
  * the returned value should be: 2.
 */
-function appleIndex(/* code here */) {
-  /* code here */
-}
+function appleIndex(fruit) {
+  for(let i =0; i<fruit.length; i++){
+    if(fruit[i] === 'apple') 
+    return i;
+  }
 
+  
+}
+console.log(appleIndex(['orange', 'grape','apple', 'banana', 'mango']));
 /**
  * ### Challenge `isItAnApple`
  * 

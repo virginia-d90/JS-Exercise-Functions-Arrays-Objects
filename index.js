@@ -112,10 +112,10 @@ console.log(temperatureInF(40,'C'));
  *   email: "leia@leia.com",
  * }
 */
-function makePersonObject(/* code here */) {
-  /* code here */
+function makePersonObject(id, name, email) {
+  return{id, name, email};
 }
-
+console.log(7, 'Virginia', 'virginialdport@gmail.com')
 /**
  * ### Challenge `getName`
  * 

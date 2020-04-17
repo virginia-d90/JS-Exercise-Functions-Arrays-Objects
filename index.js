@@ -155,10 +155,10 @@ function appleIndex(fruit) {
     if(fruit[i] === 'apple') 
     return i;
   }
-
-  
 }
 console.log(appleIndex(['orange', 'grape','apple', 'banana', 'mango']));
+  
+
 /**
  * ### Challenge `isItAnApple`
  * 
@@ -174,11 +174,21 @@ console.log(appleIndex(['orange', 'grape','apple', 'banana', 'mango']));
  * passing in [ 'orange', 'apple', 'banana', 'apples', 'apple', 'mango' ] as the argument,
  * the returned value should be: [ false, true, false, false, true, false ].
 */
-function isItAnApple(/* code here */) {
-  /* code here */
+function isItAnApple(fruit) {
+  let output = [];
+
+  for(let i = 0; i <= fruit.length; i++){
+    if(fruit[i] === 'apple'){
+      output.push(true);
+    }
+    else(output.push(false)) 
+      
+    
+    return output;
+  }
 }
 
-
+console.log(isItAnApple(['orange', 'apple', 'banana', 'apples', 'apple', 'mango']));
 
 /*
 // ⭐️ Example Test Data ⭐️

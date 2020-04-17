@@ -36,9 +36,9 @@ function addNumbers(num1, num2) {
  * 
 */
 function sayGoodbye(name) {
-  return `Goodbye, ${name}. Have a great day.`;
+  return `Goodbye, ${name}. Have a great day.`;//pass an argument through a function that returns the argument in a string with a set message
 }
-console.log(sayGoodbye('Virginia'));
+//console.log(sayGoodbye('Virginia'));
 
 
 /**
@@ -56,11 +56,11 @@ console.log(sayGoodbye('Virginia'));
  * Hint 2: There is a very easy way to round numbers in JS. Do a google search to find out how. 
 */
 function temperatureCtoF(temp){
-  return Math.round(temp * 9 / 5 + 32);
+  return Math.round(temp * 9 / 5 + 32);//CREATED A FUNCTION THAT RETURNED A ROUNDED WHOLE NUMBER AFTER PASSING AN ARGUMENT THROUGH A SIMPLE MATH FORMULA
   
 }
-console.log(temperatureCtoF(40));
-console.log(temperatureCtoF(12));
+//console.log(temperatureCtoF(40));
+//console.log(temperatureCtoF(12));
 
 /**
  * ### Challenge `temperatureInF`
@@ -79,7 +79,7 @@ console.log(temperatureCtoF(12));
  * 
  * Hint: You can call your `temperatureCtoF` function from inside `temperatureInF`.
 */
-function temperatureInF(temp, unit) {
+function temperatureInF(temp, unit) {//CREATED A FUNCTION THAT PASSED TWO ARGUMENTS THAT WERE EVALUATED USING "IF, ELSE IF, ELSE" AND RETURNED AN ANSWER
   if (unit === 'F'){
     Math.round(temp);
     return (`${temp}${unit}`);
@@ -92,8 +92,8 @@ function temperatureInF(temp, unit) {
   }
   
 }
-console.log(temperatureInF(88,'F'));
-console.log(temperatureInF(40,'C'));
+//console.log(temperatureInF(88,'F'));
+//console.log(temperatureInF(40,'C'));
 
 
 /**
@@ -115,7 +115,7 @@ console.log(temperatureInF(40,'C'));
 function makePersonObject(id, name, email) {
   return{id, name, email};
 }
-console.log(makePersonObject(7, 'Virginia', 'virginialdport@gmail.com'));
+//console.log(makePersonObject(7, 'Virginia', 'virginialdport@gmail.com'));
 /**
  * ### Challenge `getName`
  * 
@@ -133,7 +133,7 @@ function getName(person) {
   return `Hello, my name is ${person.name}`;
   
 }
-console.log(getName({id: 2, name: 'Virginia', email: 'virginialdport@gmail.com'}));
+//console.log(getName({id: 2, name: 'Virginia', email: 'virginialdport@gmail.com'}));
 
 /**
  * ### Challenge `appleIndex`
@@ -156,7 +156,7 @@ function appleIndex(fruit) {
     return i;
   }
 }
-console.log(appleIndex(['orange', 'grape','apple', 'banana', 'mango']));
+//console.log(appleIndex(['orange', 'grape','apple', 'banana', 'mango']));
   
 
 /**
@@ -188,7 +188,7 @@ function isItAnApple(fruit) {
   return output;
 }
 
-console.log(isItAnApple(['orange', 'apple', 'banana', 'apples', 'apple', 'mango']));
+//console.log(isItAnApple(['orange', 'apple', 'banana', 'apples', 'apple', 'mango']));
 
 
 /*
@@ -260,7 +260,7 @@ function getCarInfoByIndex(inventory, index) {
  * it will return `This is a Lincoln Town Car`.
 */
 function getLastCarInfo(inventory) {
-  //inventory[inventory.length - 1];
+  
   return `This is a ${inventory[inventory.length - 1].car_make}${inventory[inventory.length -1].car_model}`;
 }
 
@@ -297,8 +297,10 @@ function getModelYears(inventory) {
  * For example, if getCarInfoById is invoked with the inventory and the number 1,
  * it will return `This is a Lincoln Navigator`.
 */
-function getCarInfoById(/* code here */) {
-  /* code here */
+function getCarInfoById(inventory,idNum) {
+
+
+  return `This is a ${inventory[idNum].car_make}${inventory[idNum].car_model}`
 }
 
 /**

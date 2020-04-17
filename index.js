@@ -244,9 +244,10 @@ function get3rdCar(inventory) {
  * it will return `This is a Lincoln Navigator`.
 */
 function getCarInfoByIndex(inventory, index) {
+ 
   return `This is a ${inventory[index].car_make}${inventory[index].car_model}`;
 }
-//console.log(getCarInfoByIndex(inventory,[0]))
+
 /**
  * ### Challenge `getLastCarInfo`
  * 
@@ -258,8 +259,9 @@ function getCarInfoByIndex(inventory, index) {
  * For example, if getLastCarInfo is invoked passing the inventory inside /data/inventory.js,
  * it will return `This is a Lincoln Town Car`.
 */
-function getLastCarInfo(/* code here */) {
-  /* code here */
+function getLastCarInfo(inventory) {
+  //inventory[inventory.length - 1];
+  return `This is a ${inventory[inventory.length - 1].car_make}${inventory[inventory.length -1].car_model}`;
 }
 
 /**

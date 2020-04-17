@@ -177,18 +177,19 @@ console.log(appleIndex(['orange', 'grape','apple', 'banana', 'mango']));
 function isItAnApple(fruit) {
   let output = [];
 
-  for(let i = 0; i <= fruit.length; i++){
+  for(let i = 0; i < fruit.length; i++){
     if(fruit[i] === 'apple'){
       output.push(true);
     }
-    else(output.push(false)) 
-      
-    
-    return output;
+    else{
+      output.push(false);
+    }
   }
+  return output;
 }
 
 console.log(isItAnApple(['orange', 'apple', 'banana', 'apples', 'apple', 'mango']));
+
 
 /*
 // ⭐️ Example Test Data ⭐️
@@ -243,9 +244,9 @@ function get3rdCar(inventory) {
  * it will return `This is a Lincoln Navigator`.
 */
 function getCarInfoByIndex(inventory, index) {
-  /* code here */
+  return `This is a ${inventory[index].car_make}${inventory[index].car_model}`;
 }
-
+//console.log(getCarInfoByIndex(inventory,[0]))
 /**
  * ### Challenge `getLastCarInfo`
  * 
